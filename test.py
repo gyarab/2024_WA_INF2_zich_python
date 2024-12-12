@@ -1,18 +1,16 @@
-def fibonacci(n):
-    if n <= 0:
-        return "Invalid input. n must be a positive integer."
-    elif n == 1:
-        return 0
-    elif n == 2:
-        return 1
-    else:
-        fib_sequence = [0, 1]
-        while len(fib_sequence) < n:
-            fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
-        return fib_sequence[n-1]
-
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
 if __name__ == "__main__":
-    result = fibonacci(0)
-    print(result)
+    # Test the is_prime function
+    print(is_prime(5))  # Output: True
+    print(is_prime(10))  # Output: False
+    print(is_prime(17))  # Output: True
+  
+
 
