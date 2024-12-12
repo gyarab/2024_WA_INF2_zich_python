@@ -1,4 +1,6 @@
 def is_prime(n):
+    if not isinstance(n, int):
+        raise TypeError("Input must be an integer")
     if n < 1:
         raise ValueError("Input must be greater than or equal to 1")
     if n < 2:
@@ -15,6 +17,10 @@ if __name__ == "__main__":
     except ValueError as e:
         print(e)
     
+    try:
+        print(is_prime(1.5))  # Output: TypeError: Input must be an integer
+    except TypeError as e:
+        print(e)
    
     print(is_prime(1))  # Output: False
     print(is_prime(4))  # Output: False
