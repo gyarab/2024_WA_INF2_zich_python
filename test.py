@@ -13,7 +13,7 @@ def is_prime(n):
 if __name__ == "__main__":
     # Test the is_prime function
     try:
-         # Output: ValueError: Input must be greater than or equal to 1
+        raise ValueError("Input must be greater than or equal to 1")
         print(is_prime(1))  # Output: False
          # Output: TypeError: Input must be an integer
         print(is_prime(4))  # Output: False
