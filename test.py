@@ -1,4 +1,6 @@
 def primes_in_range(a, b):
+    if a > b:
+        a, b = b, a
     primes = []
     for num in range(a, b + 1):
         if num > 1:
@@ -10,5 +12,5 @@ def primes_in_range(a, b):
     return primes
 
 if __name__ == "__main__":
-    result = primes_in_range(1, 100)
+    result = primes_in_range(15, 9)
     print(result)
