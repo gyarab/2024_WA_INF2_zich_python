@@ -1,4 +1,6 @@
 def primes_in_range(a, b):
+    if not isinstance(a, int) or not isinstance(b, int):
+        raise ValueError("Both inputs must be integers")
     if a > b:
         a, b = b, a
     primes = []
