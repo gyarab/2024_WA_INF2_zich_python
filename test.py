@@ -4,7 +4,7 @@ def caesar_encode(text):
     
     encoded_text = ""
     for char in text:
-        if char.isalpha() and char.isascii():
+        if char.isalpha():
             ascii_offset = ord('a') if char.islower() else ord('A')
             encoded_char = chr((ord(char) - ascii_offset + 3) % 26 + ascii_offset)
             encoded_text += encoded_char
