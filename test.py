@@ -9,10 +9,9 @@ def morse(text):
     
     morse_text = ''
     for char in text.upper():
-        if char in morse_code:
-            morse_text += morse_code[char] + '/'
-        elif char.isalpha() or char.isdigit():
-            continue
+        if char.isalnum():
+            if char in morse_code:
+                morse_text += morse_code[char] + '/'
         else:
             raise ValueError(f"Invalid character: {char}")
     return morse_text.strip('/')
