@@ -12,8 +12,7 @@ def morse(text):
         if char.isalnum():
             if char in morse_code:
                 morse_text += morse_code[char] + '/'
-        else:
-            raise ValueError(f"Invalid character: {char}")
+        
     return morse_text.strip('/')
 
 # Example usage
