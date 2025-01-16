@@ -1,7 +1,10 @@
 def caesar_encode(text):
+    if not isinstance(text, str):
+        raise ValueError("Input must be a string")
+    
     encoded_text = ""
     for char in text:
-        if char.isalpha():
+        if char.isalpha() and char.isascii():
             ascii_offset = ord('a') if char.islower() else ord('A')
             encoded_char = chr((ord(char) - ascii_offset + 3) % 26 + ascii_offset)
             encoded_text += encoded_char
