@@ -7,15 +7,20 @@ def caesar_encode(text):
             encoded_text += encoded_char
         else:
             encoded_text += char
-    def caesar_decode(code):
-        decoded_text = ""
-        for char in code:
-            if char.isalpha():
-                ascii_offset = ord('a') if char.islower() else ord('A')
-                decoded_char = chr((ord(char) - ascii_offset - 3) % 26 + ascii_offset)
-                decoded_text += decoded_char
-            else:
-                decoded_text += char
-        if not decoded_text.isalpha():
-            raise ValueError("Invalid code")
-        return decoded_text
+    return encoded_text
+
+def caesar_decode(code):
+    decoded_text = ""
+    for char in code:
+        if char.isalpha():
+            ascii_offset = ord('a') if char.islower() else ord('A')
+            decoded_char = chr((ord(char) - ascii_offset - 3) % 26 + ascii_offset)
+            decoded_text += decoded_char
+        else:
+            decoded_text += char
+    if not decoded_text.isalpha():
+        raise ValueError("Invalid code")
+    return decoded_text
+
+
+
