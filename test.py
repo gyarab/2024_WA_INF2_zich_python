@@ -14,8 +14,15 @@ def morse(text):
                 morse_text += morse_code[char] + ' '
         elif char.isspace():
             morse_text += '/'
-            
-    return morse_text.strip('/')
+    
+    morse_text = morse_text.rstrip(' ')  # Remove the last underscore
+    
+    return morse_text
+    
+
+    morse_text = morse_text.rstrip()
+    
+    return morse_text
 
 # Example usage
 text = "Hello ž5orld"
