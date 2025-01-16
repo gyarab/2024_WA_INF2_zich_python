@@ -1,10 +1,21 @@
-def split_into_threes(text):
-    if not isinstance(text, str):
-        raise ValueError("Input value must be a string.")
-    parts = []
-    for i in range(0, len(text), 3):
-        parts.append(text[i:i+3])
-    return parts
-
-if __name__ == "__main__":
-    print(split_into_threes(123))
+def caesar_encode(text):
+    encoded_text = ""
+    for char in text:
+        if char.isalpha():
+            ascii_offset = ord('a') if char.islower() else ord('A')
+            encoded_char = chr((ord(char) - ascii_offset + 3) % 26 + ascii_offset)
+            encoded_text += encoded_char
+        else:
+            encoded_text += char
+    def caesar_decode(code):
+        decoded_text = ""
+        for char in code:
+            if char.isalpha():
+                ascii_offset = ord('a') if char.islower() else ord('A')
+                decoded_char = chr((ord(char) - ascii_offset - 3) % 26 + ascii_offset)
+                decoded_text += decoded_char
+            else:
+                decoded_text += char
+        if not decoded_text.isalpha():
+            raise ValueError("Invalid code")
+        return decoded_text
