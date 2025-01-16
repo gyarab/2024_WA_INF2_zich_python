@@ -11,11 +11,13 @@ def morse(text):
     for char in text.upper():
         if char.isalnum():
             if char in morse_code:
-                morse_text += morse_code[char] + '/'
-        
+                morse_text += morse_code[char] + ' '
+        elif char.isspace():
+            morse_text += '/'
+            
     return morse_text.strip('/')
 
 # Example usage
-text = "Hello World"
+text = "Hello ž5orld"
 morse_text = morse(text)
 print(morse_text)
