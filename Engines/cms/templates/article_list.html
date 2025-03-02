@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    {% extends 'articles/base.html' %}
+    {% extends 'base.html' %}
 
     {% block content %}
-    <h1>Articles</h1>
+    <h1>Article List</h1>
     <ul>
         {% for article in articles %}
-            <li>
-                <a href="{% url 'article_detail' article.id %}">{{ article.title }}</a>
-            </li>
+        <li>
+            <a href="{% url 'article_detail' article.id %}">{{ article.title }}</a>
+        </li>
         {% endfor %}
     </ul>
     {% endblock %}

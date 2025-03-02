@@ -7,17 +7,12 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    {% extends 'articles/base.html' %}
+    {% extends 'base.html' %}
 
     {% block content %}
-    <div class="article-detail">
         <h1>{{ article.title }}</h1>
-        <p><strong>Published on:</strong> {{ article.published_date }}</p>
-        <div class="article-content">
-            {{ article.content|safe }}
-        </div>
-        <a href="{% url 'articles:index' %}">Back to Articles</a>
-    </div>
+        <p>{{ article.content }}</p>
+        <a href="{% url 'article_list' %}">Back to Articles</a>
     {% endblock %}
 </body>
 </html>

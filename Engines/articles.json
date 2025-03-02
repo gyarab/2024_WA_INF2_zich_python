@@ -1,0 +1,25 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "First Article",
+      "content": "This is the content of the first article.",
+      "author": "Author One",
+      "published_date": "2023-01-01"
+    },
+    {
+      "id": 2,
+      "title": "Second Article",
+      "content": "This is the content of the second article.",
+      "author": "Author Two",
+      "published_date": "2023-02-01"
+    },
+    {
+      "id": 3,
+      "title": "Third Article",
+      "content": "This is the content of the third article.",
+      "author": "Author Three",
+      "published_date": "2023-03-01"
+    }
+  ]
+}
