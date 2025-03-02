@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "V8 Engine",
+        "description": "The V8 engine is a high-performance JavaScript engine developed by Google for Chrome and Node.js.",
+        "manufacturer": "Google",
+        "year": 2008,
+        "image": "static/images/v8_engine.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Hemi Engine",
+        "description": "The Hemi engine is a series of internal combustion engines produced by Chrysler with a hemispherical combustion chamber.",
+        "manufacturer": "Chrysler",
+        "year": 1951,
+        "image": "static/images/hemi_engine.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Wankel Engine",
+        "description": "The Wankel engine is a type of rotary engine that uses a triangular rotor to convert pressure into rotating motion.",
+        "manufacturer": "Mazda",
+        "year": 1967,
+        "image": "static/images/wankel_engine.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Flat Engine",
+        "description": "Flat engines, also known as boxer engines, have horizontally opposed cylinders and are known for their low center of gravity.",
+        "manufacturer": "Subaru",
+        "year": 1966,
+        "image": "static/images/flat_engine.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Turbocharged Engine",
+        "description": "Turbocharged engines use a turbine-driven forced induction system to improve engine efficiency and power output.",
+        "manufacturer": "Various",
+        "year": 1962,
+        "image": "static/images/turbocharged_engine.jpg"
+    }
+]

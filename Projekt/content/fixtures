@@ -1,0 +1,46 @@
+The fixtures directory is typically used to hold JSON or YAML files that contain initial data for your Django application. Since you requested the contents for the fixtures directory, I will create a JSON file that can be placed inside this directory. This file will contain sample data for the CMS project about engines.
+
+Here is the content for the file `/2024_WA_INF1_foltin_python/content/fixtures/engines.json`:
+
+[
+    {
+        "model": "content.engine",
+        "pk": 1,
+        "fields": {
+            "name": "V8 Engine",
+            "description": "A V8 engine is an eight-cylinder engine in a V configuration.",
+            "power": "450 HP",
+            "torque": "500 lb-ft"
+        }
+    },
+    {
+        "model": "content.engine",
+        "pk": 2,
+        "fields": {
+            "name": "Inline-4 Engine",
+            "description": "An inline-four engine is a four-cylinder engine with all four cylinders arranged in a straight line.",
+            "power": "150 HP",
+            "torque": "140 lb-ft"
+        }
+    },
+    {
+        "model": "content.engine",
+        "pk": 3,
+        "fields": {
+            "name": "Flat-6 Engine",
+            "description": "A flat-six engine is a six-cylinder engine with the cylinders arranged horizontally.",
+            "power": "350 HP",
+            "torque": "290 lb-ft"
+        }
+    },
+    {
+        "model": "content.engine",
+        "pk": 4,
+        "fields": {
+            "name": "V12 Engine",
+            "description": "A V12 engine is a twelve-cylinder engine in a V configuration.",
+            "power": "600 HP",
+            "torque": "600 lb-ft"
+        }
+    }
+]

@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
-class CmsConfig(AppConfig):
+class ContentConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'cms'
+    name = 'content'
