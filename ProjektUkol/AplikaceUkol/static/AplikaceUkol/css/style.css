@@ -1,0 +1,134 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333; /* Dark navigation bar */
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #575757; /* Darker gray on hover */
+    color: #fff;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #4CAF50; /* Green headings */
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e8f5e9; /* Light green background */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #c8e6c9; /* Slightly darker green on hover */
+}
+
+/* Links */
+a {
+    color: #4CAF50; /* Green links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50; /* Green header for tables */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Slightly darker gray on hover */
+}

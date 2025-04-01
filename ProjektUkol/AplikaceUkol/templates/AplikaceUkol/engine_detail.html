@@ -1,0 +1,27 @@
+{% extends "AplikaceUkol/base.html" %}
+
+{% block content %}
+<h1>{{ engine.name }}</h1>
+<ul>
+    <li>Engine: {{ engine.engine }}</li>
+    <li>Fuel: {{ engine.fuel }}</li>
+    <li>Displacement: {{ engine.displacement }} L</li>
+    <li>Power: {{ engine.power }} kW</li>
+    <li>City Consumption: {{ engine.kilometrageCity }} L/100 km</li>
+    <li>Road Consumption: {{ engine.kilometrageRoad }} L/100 km</li>
+    <li>Weight: {{ engine.weight }} kg</li>
+    <li>Top Speed: {{ engine.top_speed }} km/h</li>
+    <li>0-100 km/h: {{ engine.zero_to_hundred }} s</li>
+</ul>
+
+<h2>Categories: </h2>
+<ul>
+    {% for cat in categories %}
+        <li><a href="/AplikaceUkol/categories/{{ cat.pk }}">{{ cat.name }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Manufacturer: <a href="/AplikaceUkol/manufacturers/{{ manufacturer.pk }}">{{ manufacturer.name }}</a></h2>
+
+<p><a href="/AplikaceUkol">Back to list</a></p>
+{% endblock %}

@@ -1,0 +1,177 @@
+[
+    {
+    "model": "AplikaceUkol.manufacturer",
+    "pk": 1,
+    "fields": {
+        "name": "Škoda", 
+        "established": 1895, 
+        "countryOfOrigin": "Česká republika",
+            "defunct": false
+        }
+    },
+    {
+    "model": "AplikaceUkol.manufacturer",
+    "pk": 2,
+    "fields": {
+        "name": "Avia", 
+        "established": 1919, 
+        "countryOfOrigin": "Česká republika",
+            "defunct": true
+        }
+    },
+    {
+    "model": "AplikaceUkol.manufacturer",
+    "pk": 3,
+    "fields": {
+        "name": "Toyota", 
+        "established": 1937, 
+        "countryOfOrigin": "Japonsko",
+            "defunct": false
+        }
+    },
+    {
+    "model": "AplikaceUkol.manufacturer",
+    "pk": 4,
+    "fields": {
+        "name": "Porsche", 
+        "established": 1931, 
+        "countryOfOrigin": "Německo",
+            "defunct": false
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 1,
+        "fields": {
+            "name": "1.9 TDI",
+            "engine": "Turbocharged Diesel",
+            "fuel": "Diesel",
+            "displacement": 1.896,
+            "power": 66,
+            "kilometrageCity": 6.7,
+            "kilometrageRoad": 4.2,
+            "manufacturer": 1,
+            "categories": [9, 2]
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 2,
+        "fields": {
+            "name": "DNY",
+            "engine": "Flat-4 Turbocharged",
+            "fuel": "Petrol",
+            "displacement": 1.988,
+            "power": 221,
+            "kilometrageCity": 11.8,
+            "kilometrageRoad": 6.9,
+            "manufacturer": 4,
+            "categories": [5, 8, 10]
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 3,
+        "fields": {
+            "name": "G16E-GTS",
+            "engine": "Inline-3 Turbocharged",
+            "fuel": "Petrol",
+            "displacement": 1.618,
+            "power": 206,
+            "kilometrageCity": 11.8,
+            "kilometrageRoad": 6.9,
+            "manufacturer": 3,
+            "categories": [1, 5, 6, 11]
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 4,
+        "fields": {
+            "name": "2.8L Turbo Diesel",
+            "engine": "Turbocharged Diesel",
+            "fuel": "Diesel",
+            "displacement": 2.8,
+            "power": 150,
+            "kilometrageCity": 10.5,
+            "kilometrageRoad": 7.8,
+            "manufacturer": 3,
+            "categories": [1, 6, 11]
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 5,
+        "fields": {
+            "name": "1.2 TSI",
+            "engine": "Inline-4 Turbocharged",
+            "fuel": "Petrol",
+            "displacement": 1.197,
+            "power": 81,
+            "kilometrageCity": 6.7,
+            "kilometrageRoad": 4.8,
+            "manufacturer": 1,
+            "categories": [4, 9]
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 6,
+        "fields": {
+            "name": "Inline 2 BMW",
+            "engine": "Inline-2",
+            "fuel": "Petrol",
+            "displacement": 0.750,
+            "power": 50,
+            "kilometrageCity": 5.0,
+            "kilometrageRoad": 3.8,
+            "manufacturer": 2,
+            "categories": [5, 8, 10]
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 7,
+        "fields": {
+            "name": "1.5 TSI",
+            "engine": "Inline-4 Turbocharged",
+            "fuel": "Petrol",
+            "displacement": 1.498,
+            "power": 110,
+            "kilometrageCity": 7.0,
+            "kilometrageRoad": 5.2,
+            "manufacturer": 1,
+            "categories": [1, 9]
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 8,
+        "fields": {
+            "name": "2.0 VVT-iE",
+            "engine": "Inline-4 Naturally Aspirated",
+            "fuel": "Petrol",
+            "displacement": 1.987,
+            "power": 129,
+            "kilometrageCity": 7.5,
+            "kilometrageRoad": 5.2,
+            "manufacturer": 3,
+            "categories": [4, 6, 9]
+        }
+    },
+    {
+        "model": "AplikaceUkol.enginespecifications",
+        "pk": 9,
+        "fields": {
+            "name": "9R9 Hybrid",
+            "engine": "2.0L Turbocharged + Electric Motors",
+            "fuel": "Petrol + Electricity",
+            "displacement": 2.0,
+            "power": 854,
+            "kilometrageCity": 8.9,
+            "kilometrageRoad": 6.2,
+            "manufacturer": 4,
+            "categories": [5, 11]
+        }
+    }
+]
