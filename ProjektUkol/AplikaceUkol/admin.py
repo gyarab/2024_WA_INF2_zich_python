@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import CarSpecifications, Category, Manufacturer
+from .models import EngineSpecifications, Category, Manufacturer
 
-admin.site.register(CarSpecifications)
+# Register your models here
+admin.site.register(EngineSpecifications)
 admin.site.register(Category)
 admin.site.register(Manufacturer)
