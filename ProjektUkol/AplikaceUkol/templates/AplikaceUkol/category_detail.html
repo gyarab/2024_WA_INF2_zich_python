@@ -1,14 +1,15 @@
 {% extends "AplikaceUkol/base.html" %}
 
+{% block title %}{{ category.name }}{% endblock %}
+
 {% block content %}
-    <h1>{{ category.name }}</h1>
+<h1>Category: {{ category.name }}</h1>
+<h2>Engines in this Category</h2>
+<ul>
+    {% for engine in engines %}
+        <li><a href="{% url 'AplikaceUkol:engine_detail' engine.pk %}">{{ engine.name }}</a></li>
+    {% endfor %}
+</ul>
 
-    <h2>Auta v této kategorii:</h2>
-    <ul>
-        {% for car in cars %}
-            <li><a href="/AplikaceUkol/cars/{{ car.pk }}">{{ car.name }}</a></li>
-        {% endfor %}
-    </ul>
-
-    <p><a href="/AplikaceUkol/">Zpět na seznam</a></p>
+<p><a href="{% url 'AplikaceUkol:index' %}">Back to Home</a></p>
 {% endblock %}

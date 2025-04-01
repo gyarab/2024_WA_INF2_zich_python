@@ -1,32 +1,28 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}AplikaceUkol{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'AplikaceUkol/css/style.css' %}">
-    <title>{% block title %}Seznam automobilů{% endblock %}</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="{% url 'AplikaceUkol:category_detail' category.pk %}">{{ category.name }}</a>
-        </nav>
+        <h1>AplikaceUkol</h1>
     </header>
-    
+    <nav>
+        <a href="{% url 'AplikaceUkol:index' %}">Home</a>
+        <a href="{% url 'AplikaceUkol:index' %}#categories">Categories</a>
+        <a href="{% url 'AplikaceUkol:index' %}#manufacturers">Manufacturers</a>
+    </nav>
     <main>
         {% block content %}
-        {% if cars %}
-            <ul>
-                {% for car in cars %}
-                    <li><a href="/AplikaceUkol/cars/{{ car.pk }}">{{ car.name }}</a></li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>No cars available.</p>
-        {% endif %}
         {% endblock %}
     </main>
+    <footer>
+        <p>&copy; 2025 AplikaceUkol. All rights reserved.</p>
+    </footer>
 </body>
 </html>

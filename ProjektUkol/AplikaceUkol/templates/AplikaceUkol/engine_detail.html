@@ -1,27 +1,46 @@
 {% extends "AplikaceUkol/base.html" %}
 
+{% block title %}{{ engine.name }}{% endblock %}
+
 {% block content %}
 <h1>{{ engine.name }}</h1>
-<ul>
-    <li>Engine: {{ engine.engine }}</li>
-    <li>Fuel: {{ engine.fuel }}</li>
-    <li>Displacement: {{ engine.displacement }} L</li>
-    <li>Power: {{ engine.power }} kW</li>
-    <li>City Consumption: {{ engine.kilometrageCity }} L/100 km</li>
-    <li>Road Consumption: {{ engine.kilometrageRoad }} L/100 km</li>
-    <li>Weight: {{ engine.weight }} kg</li>
-    <li>Top Speed: {{ engine.top_speed }} km/h</li>
-    <li>0-100 km/h: {{ engine.zero_to_hundred }} s</li>
-</ul>
+<table>
+    <tr>
+        <th>Engine Type</th>
+        <td>{{ engine.engine }}</td>
+    </tr>
+    <tr>
+        <th>Fuel Type</th>
+        <td>{{ engine.fuel }}</td>
+    </tr>
+    <tr>
+        <th>Displacement</th>
+        <td>{{ engine.displacement }} L</td>
+    </tr>
+    <tr>
+        <th>Power</th>
+        <td>{{ engine.power }} kW</td>
+    </tr>
+    <tr>
+        <th>City Consumption</th>
+        <td>{{ engine.kilometrageCity }} L/100 km</td>
+    </tr>
+    <tr>
+        <th>Road Consumption</th>
+        <td>{{ engine.kilometrageRoad }} L/100 km</td>
+    </tr>
+    <tr>
+        <th>Manufacturer</th>
+        <td><a href="{% url 'AplikaceUkol:manufacturer_detail' engine.manufacturer.pk %}">{{ engine.manufacturer.name }}</a></td>
+    </tr>
+</table>
 
-<h2>Categories: </h2>
+<h2>Categories</h2>
 <ul>
-    {% for cat in categories %}
-        <li><a href="/AplikaceUkol/categories/{{ cat.pk }}">{{ cat.name }}</a></li>
+    {% for category in engine.categories.all %}
+        <li><a href="{% url 'AplikaceUkol:category_detail' category.pk %}">{{ category.name }}</a></li>
     {% endfor %}
 </ul>
 
-<h2>Manufacturer: <a href="/AplikaceUkol/manufacturers/{{ manufacturer.pk }}">{{ manufacturer.name }}</a></h2>
-
-<p><a href="/AplikaceUkol">Back to list</a></p>
+<p><a href="{% url 'AplikaceUkol:index' %}">Back to Home</a></p>
 {% endblock %}

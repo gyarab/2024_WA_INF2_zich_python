@@ -1,5 +1,7 @@
 {% extends "AplikaceUkol/base.html" %}
 
+{% block title %}Home{% endblock %}
+
 {% block content %}
 <h1>Auta: </h1>
     <ul>
@@ -7,23 +9,24 @@
             <li><a href="/AplikaceUkol/cars/{{ car.pk }}">{{ car.name }}</a></li>
         {% endfor %}
     </ul>
-<h1>Engines: </h1>
+<h1>Engines</h1>
 <ul>
     {% for engine in engines %}
-        <li><a href="/AplikaceUkol/engines/{{ engine.pk }}">{{ engine.name }}</a></li>
+        <li><a href="{% url 'AplikaceUkol:engine_detail' engine.pk %}">{{ engine.name }}</a></li>
     {% endfor %}
 </ul>
-<h1>Kategorie: </h1>
-    <ul>
-        {% for cat in categories %}
-            <li><a href="/AplikaceUkol/categories/{{ cat.pk }}">{{ cat.name }}</a></li>
-        {% endfor %}
-    </ul>
-<h1>Výrobci: </h1>
-    <ul>
-        {% for man in manufacturers %}
-            <li><a href="/AplikaceUkol/manufacturers/{{ man.pk }}">{{ man.name }}</a></li>
-        {% endfor %}
-    </ul>
 
+<h2 id="categories">Categories</h2>
+<ul>
+    {% for category in categories %}
+        <li><a href="{% url 'AplikaceUkol:category_detail' category.pk %}">{{ category.name }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2 id="manufacturers">Manufacturers</h2>
+<ul>
+    {% for manufacturer in manufacturers %}
+        <li><a href="{% url 'AplikaceUkol:manufacturer_detail' manufacturer.pk %}">{{ manufacturer.name }}</a></li>
+    {% endfor %}
+</ul>
 {% endblock %}
