@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from AplikaceUkol import views
+from AplikaceUkol import views  # Import the index view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('AplikaceUkol/', include('AplikaceUkol.urls'))
+    path('AplikaceUkol/', include('AplikaceUkol.urls')),
+    path('', views.index, name='homepage'),  # Map the root URL to the index view
 ]

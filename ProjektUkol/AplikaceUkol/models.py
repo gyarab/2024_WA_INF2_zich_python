@@ -23,8 +23,8 @@ class EngineSpecifications(models.Model):  # Renamed from CarSpecifications
     power = models.PositiveIntegerField()  # Power in kW
     kilometrageCity = models.FloatField()  # Fuel consumption in city (L/100 km)
     kilometrageRoad = models.FloatField()  # Fuel consumption on road (L/100 km)
-    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)  # Manufacturer of the engine
-    categories = models.ManyToManyField(Category)  # Categories associated with the engine
+    manufacturer = models.ForeignKey('Manufacturer', on_delete=models.CASCADE)  # Manufacturer of the engine
+    categories = models.ManyToManyField('Category')  # Categories associated with the engine
 
     def __str__(self):
         return self.name

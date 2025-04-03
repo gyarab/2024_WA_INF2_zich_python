@@ -1,41 +1,41 @@
 [
     {
-    "model": "AplikaceUkol.manufacturer",
-    "pk": 1,
-    "fields": {
-        "name": "Škoda", 
-        "established": 1895, 
-        "countryOfOrigin": "Česká republika",
+        "model": "AplikaceUkol.manufacturer",
+        "pk": 1,
+        "fields": {
+            "name": "Škoda",
+            "established": 1895,
+            "countryOfOrigin": "Česká republika",
             "defunct": false
         }
     },
     {
-    "model": "AplikaceUkol.manufacturer",
-    "pk": 2,
-    "fields": {
-        "name": "Avia", 
-        "established": 1919, 
-        "countryOfOrigin": "Česká republika",
+        "model": "AplikaceUkol.manufacturer",
+        "pk": 2,
+        "fields": {
+            "name": "Avia",
+            "established": 1919,
+            "countryOfOrigin": "Česká republika",
             "defunct": true
         }
     },
     {
-    "model": "AplikaceUkol.manufacturer",
-    "pk": 3,
-    "fields": {
-        "name": "Toyota", 
-        "established": 1937, 
-        "countryOfOrigin": "Japonsko",
+        "model": "AplikaceUkol.manufacturer",
+        "pk": 3,
+        "fields": {
+            "name": "Toyota",
+            "established": 1937,
+            "countryOfOrigin": "Japonsko",
             "defunct": false
         }
     },
     {
-    "model": "AplikaceUkol.manufacturer",
-    "pk": 4,
-    "fields": {
-        "name": "Porsche", 
-        "established": 1931, 
-        "countryOfOrigin": "Německo",
+        "model": "AplikaceUkol.manufacturer",
+        "pk": 4,
+        "fields": {
+            "name": "Porsche",
+            "established": 1931,
+            "countryOfOrigin": "Německo",
             "defunct": false
         }
     },
@@ -50,8 +50,7 @@
             "power": 66,
             "kilometrageCity": 6.7,
             "kilometrageRoad": 4.2,
-            "manufacturer": 1,
-            "categories": [9, 2]
+            "manufacturer": 1
         }
     },
     {
@@ -65,8 +64,7 @@
             "power": 221,
             "kilometrageCity": 11.8,
             "kilometrageRoad": 6.9,
-            "manufacturer": 4,
-            "categories": [5, 8, 10]
+            "manufacturer": 4
         }
     },
     {
@@ -80,8 +78,7 @@
             "power": 206,
             "kilometrageCity": 11.8,
             "kilometrageRoad": 6.9,
-            "manufacturer": 3,
-            "categories": [1, 5, 6, 11]
+            "manufacturer": 3
         }
     },
     {
@@ -95,8 +92,7 @@
             "power": 150,
             "kilometrageCity": 10.5,
             "kilometrageRoad": 7.8,
-            "manufacturer": 3,
-            "categories": [1, 6, 11]
+            "manufacturer": 3
         }
     },
     {
@@ -110,8 +106,7 @@
             "power": 81,
             "kilometrageCity": 6.7,
             "kilometrageRoad": 4.8,
-            "manufacturer": 1,
-            "categories": [4, 9]
+            "manufacturer": 1
         }
     },
     {
@@ -125,8 +120,7 @@
             "power": 50,
             "kilometrageCity": 5.0,
             "kilometrageRoad": 3.8,
-            "manufacturer": 2,
-            "categories": [5, 8, 10]
+            "manufacturer": 2
         }
     },
     {
@@ -140,8 +134,7 @@
             "power": 110,
             "kilometrageCity": 7.0,
             "kilometrageRoad": 5.2,
-            "manufacturer": 1,
-            "categories": [1, 9]
+            "manufacturer": 1
         }
     },
     {
@@ -155,8 +148,7 @@
             "power": 129,
             "kilometrageCity": 7.5,
             "kilometrageRoad": 5.2,
-            "manufacturer": 3,
-            "categories": [4, 6, 9]
+            "manufacturer": 3
         }
     },
     {
@@ -170,8 +162,7 @@
             "power": 854,
             "kilometrageCity": 8.9,
             "kilometrageRoad": 6.2,
-            "manufacturer": 4,
-            "categories": [5, 11]
+            "manufacturer": 4
         }
     }
 ]
