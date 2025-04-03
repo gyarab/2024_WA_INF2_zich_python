@@ -40,6 +40,41 @@
         }
     },
     {
+        "model": "AplikaceUkol.category",
+        "pk": 1,
+        "fields": {
+            "name": "Diesel"
+        }
+    },
+    {
+        "model": "AplikaceUkol.category",
+        "pk": 2,
+        "fields": {
+            "name": "Petrol"
+        }
+    },
+    {
+        "model": "AplikaceUkol.category",
+        "pk": 3,
+        "fields": {
+            "name": "Hybrid"
+        }
+    },
+    {
+        "model": "AplikaceUkol.category",
+        "pk": 4,
+        "fields": {
+            "name": "Turbocharged"
+        }
+    },
+    {
+        "model": "AplikaceUkol.category",
+        "pk": 5,
+        "fields": {
+            "name": "Naturally Aspirated"
+        }
+    },
+    {
         "model": "AplikaceUkol.enginespecifications",
         "pk": 1,
         "fields": {
@@ -50,7 +85,8 @@
             "power": 66,
             "kilometrageCity": 6.7,
             "kilometrageRoad": 4.2,
-            "manufacturer": 1
+            "manufacturer": 1,
+            "categories": [1, 4]
         }
     },
     {
@@ -64,7 +100,8 @@
             "power": 221,
             "kilometrageCity": 11.8,
             "kilometrageRoad": 6.9,
-            "manufacturer": 4
+            "manufacturer": 4,
+            "categories": [2, 4]
         }
     },
     {
@@ -78,7 +115,8 @@
             "power": 206,
             "kilometrageCity": 11.8,
             "kilometrageRoad": 6.9,
-            "manufacturer": 3
+            "manufacturer": 3,
+            "categories": [2, 4]
         }
     },
     {
@@ -92,7 +130,8 @@
             "power": 150,
             "kilometrageCity": 10.5,
             "kilometrageRoad": 7.8,
-            "manufacturer": 3
+            "manufacturer": 3,
+            "categories": [1, 4]
         }
     },
     {
@@ -106,7 +145,8 @@
             "power": 81,
             "kilometrageCity": 6.7,
             "kilometrageRoad": 4.8,
-            "manufacturer": 1
+            "manufacturer": 1,
+            "categories": [2, 4]
         }
     },
     {
@@ -120,7 +160,8 @@
             "power": 50,
             "kilometrageCity": 5.0,
             "kilometrageRoad": 3.8,
-            "manufacturer": 2
+            "manufacturer": 2,
+            "categories": [2, 5]
         }
     },
     {
@@ -134,7 +175,8 @@
             "power": 110,
             "kilometrageCity": 7.0,
             "kilometrageRoad": 5.2,
-            "manufacturer": 1
+            "manufacturer": 1,
+            "categories": [2, 4]
         }
     },
     {
@@ -148,7 +190,8 @@
             "power": 129,
             "kilometrageCity": 7.5,
             "kilometrageRoad": 5.2,
-            "manufacturer": 3
+            "manufacturer": 3,
+            "categories": [2, 5]
         }
     },
     {
@@ -162,7 +205,8 @@
             "power": 854,
             "kilometrageCity": 8.9,
             "kilometrageRoad": 6.2,
-            "manufacturer": 4
+            "manufacturer": 4,
+            "categories": [3, 4]
         }
     }
 ]
